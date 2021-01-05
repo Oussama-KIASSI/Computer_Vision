@@ -147,7 +147,7 @@ def noise_image(content_image, noise_ratio = 0.6):
     """
     
     # Generate a random noise_image
-    noise_image = np.random.uniform(-20, 20, (125, 200, 3)).astype('float32')
+    noise_image = np.random.uniform(-50, 50, (125, 200, 3)).astype('float32')
     
     # Set the input_image to be a weighted average of the content_image and a noise_image
     input_image = noise_image * noise_ratio + content_image * (1 - noise_ratio)
@@ -253,9 +253,9 @@ def cost(J_content, J_style, alpha = 1, beta = 4):
     return (J_tot)
 
 
-def model_nn(sess, model, input_image, J, J_content, J_style, num_iterations = 1000):
+def model_nn(sess, model, input_image, J, J_content, J_style, num_iterations = 100):
     
-    optimizer = tf.train.AdamOptimizer(2.0)
+    optimizer = tf.train.AdamOptimizer(0.7)
     
     train_step = optimizer.minimize(J)
     
@@ -269,7 +269,7 @@ def model_nn(sess, model, input_image, J, J_content, J_style, num_iterations = 1
         
         generated_image = sess.run(model["input"])
         
-        if i%100 == 0:
+        if i%10 == 0:
             Jt, Jc, Js = sess.run([J, J_content, J_style])
             print("Iteration " + str(i) + " :")
             print("total cost = " + str(Jt))
