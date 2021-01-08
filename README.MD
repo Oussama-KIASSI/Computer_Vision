@@ -9,7 +9,7 @@ Hand Digits Recognition
    |-- Data
    |   |-- test_signs.h5
    |   |-- train_signs.h5
-   |-- Hand Digits Recognition_main.ipynb
+   |-- Hand_Digits_Recognition_main.ipynb
    |-- README.MD
 Neural Style Transfer
    |-- Contents
@@ -27,7 +27,7 @@ Neural Style Transfer
    |   |-- 80.jpg
    |   |-- 90.jpg
    |   |-- generated_image.jpg
-   |-- Neural Style Transfer_main.ipynb
+   |-- Neural_Style_Transfer_main.ipynb
    |-- Pre-trained
    |   |-- Pre-trained model.MD
    |-- README.MD
@@ -36,4 +36,3 @@ Neural Style Transfer
    |   |-- van-gogh.jpg
 LICENSE
 README.MD
-
