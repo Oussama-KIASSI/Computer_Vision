@@ -14,7 +14,9 @@ Hand Digits Recognition
 Neural Style Transfer
    |-- Contents
    |   |-- Me.JPG
-   |-- Functions.py
+   |-- Styles
+   |   |-- lisa.jpg
+   |   |-- van-gogh.jpg
    |-- Generated
    |   |-- 0.jpg
    |   |-- 10.jpg
@@ -27,12 +29,10 @@ Neural Style Transfer
    |   |-- 80.jpg
    |   |-- 90.jpg
    |   |-- generated_image.jpg
-   |-- Neural_Style_Transfer_main.ipynb
    |-- Pre-trained
    |   |-- Pre-trained model.MD
+   |-- Neural_Style_Transfer_main.ipynb
+   |-- Functions.py
    |-- README.MD
-   |-- Styles
-   |   |-- lisa.jpg
-   |   |-- van-gogh.jpg
 LICENSE
 README.MD
